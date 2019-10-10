@@ -8,6 +8,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'api.apps.ApiConfig',
+    'rest_framework',
 ]
 
 DATABASES = {
@@ -16,3 +17,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+ROOT_URLCONF = 'urls'
+
